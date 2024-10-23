@@ -1,0 +1,42 @@
+# Dog API 
+ Problem 1 
+
+# Import required libraries
+import requests
+import matplotlib.pyplot as plt
+
+# Define the API endpoint
+api_url = "http://dog-api.kinduff.com/api/facts"
+
+# Retrieve data from the Dog API
+response = requests.get(api_url)
+data = response.json()
+
+# Extract the dog fact from the response
+dog_fact = data["facts"][0]
+fact_length = len(dog_fact)
+
+# Print the dog fact
+print(f"Random Dog Fact: {dog_fact}")
+
+# Plot the length of the fact using a bar chart
+plt.figure(figsize=(8, 5))
+plt.bar(['Dog Fact Length'], [fact_length], color='blue')
+plt.title('Length of the Random Dog Fact')
+plt.ylabel('Number of Characters')
+plt.show()
+
+ Problem 2
+
+import requests
+
+# Fetch random dog fact
+response = requests.get("http://dog-api.kinduff.com/api/facts")
+fact = response.json()["facts"][0]
+
+# Count number of words in the fact
+word_count = len(fact.split())
+print(f"Dog Fact: {fact}")
+print(f"Word Count: {word_count}")
+
+
