@@ -6,6 +6,7 @@ This is a group assignment with 2-4 people per group.
 For each group member, find a data source with an API--here is the Public API page Links to an external site. I linked to in class, there are other lists, I am sure. Each group member can pick their own API and there is no need that it be Biology related, though should be appropriate. Each group member should pick a different API.
 
 Yuanming: API of eBird: https://documenter.getpostman.com/view/664302/S1ENwy59
+Stephanie: API of Dog Facts: https://kinduff.github.io/dog-api/
 
 For each API, write a script (or Jupyter Notebook) to retrieve information using that API and select part of that to save/print/graph/display in a useful/interesting manner. Again the information retrieved is up to you, though you must do more than print the entire returned value.
 
